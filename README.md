@@ -15,7 +15,7 @@ chmod +x generate-module-structure.sh
 ./generate-module-structure.sh <module-name>
 ```
 This will generate below module structure
-```bash
+```
 # Modules folder structure
 <module-name>
 ├── main.tf
