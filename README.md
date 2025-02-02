@@ -22,4 +22,4 @@ This will generate below module structure
 ├── outputs.tf
 └── variables.tf
 ```
-> <b>Note:</b> Always include `defult` value in variables file to avoide any uninteded broken terraform script. 
+> <b>Note:</b> Always include `defult` value in variables file to avoide any unintended broken terraform script. 
