@@ -21,6 +21,12 @@ resource "aws_ecs_service" "ecs_service" {
 #     container_port   = 8080
 #   }
 
+network_configuration {
+  subnets          = var.subnet  # Replace with your actual subnets
+  security_groups  = var.security_group  # Replace with your actual security group
+  assign_public_ip = true  # Set to false if using private subnets
+}
+
 #   placement_constraints {
 #     type       = "memberOf"
 #     expression = "attribute:ecs.availability-zone in [us-west-2a, us-west-2b]"

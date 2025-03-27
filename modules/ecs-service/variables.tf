@@ -14,3 +14,11 @@ variable "service_name" {
 variable "desired_count" {
   type = number
 }
+
+variable "subnet" {
+  type = list(string)
+}
+
+variable "security_group" {
+  type = list(string)
+}
