@@ -14,7 +14,7 @@ This does not include `Load Balancer` hence running the ECS service task as `Net
 
 ## How to acceess?
 Since in this POC I don't attach a `Load Balancer` I use IP address to access the service.
-### Strep 1
+### Step 1
 Open the service
 ![alt text](image.png)
 ### Step 2
