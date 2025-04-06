@@ -17,6 +17,7 @@ provider "aws" {
 locals {
   app_name = "nginx-proxy"
   app_environment = "dev"
+  app_container_image =  "nginx:latest"
   app_port = 80
 }
 
@@ -84,6 +85,10 @@ module aws_ecs_cluster {
 
 module "task_definition" {
   source = "../../../modules/ecs-task-definition"
+  app_name = local.app_name
+  app_container_image = local.app_container_image
+  app_environment = local.app_environment
+  app_port = local.app_port
 }
 
 module "target_group" {

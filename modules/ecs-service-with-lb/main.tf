@@ -13,8 +13,8 @@ resource "aws_ecs_service" "ecs_service" {
 
   load_balancer {
     target_group_arn = var.target_group_arn
-    # container_name   = "${var.app_name}-${var.app_environment}-container"
-    container_name   = "nginx-server"
+    container_name   = "${var.app_name}-${var.app_environment}-container"
+    # container_name   = "nginx-server"
     container_port   = var.container_port
   }
 }
