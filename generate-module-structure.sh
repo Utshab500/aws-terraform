@@ -1,10 +1,12 @@
 #! /bin/bash
 
-if [ -d "./modules/$1" ]; then
-    echo "Modules $1 exists."
+read -p "Module name: " MODULE
+
+if [ -d "./modules/$MODULE" ]; then
+    echo "Modules $MODULE exists."
 else
-    mkdir ./modules/$1
-    touch ./modules/$1/main.tf
-    touch ./modules/$1/variables.tf
-    touch ./modules/$1/outputs.tf
+    mkdir ./modules/$MODULE
+    touch ./modules/$MODULE/main.tf
+    touch ./modules/$MODULE/variables.tf
+    touch ./modules/$MODULE/outputs.tf
 fi
