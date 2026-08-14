@@ -4,13 +4,12 @@ variable "app_name" {
 
 variable "app_environment" {
   type = string
-  default = "dev"
 }
 
-variable "app_container_image" {
+variable "vpc_id" {
   type = string
 }
 
-variable "app_port" {
+variable "port" {
   type = number
 }

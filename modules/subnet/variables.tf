@@ -19,3 +19,8 @@ variable "assign_public_ip" {
   type = bool
   default = false
 }
+
+variable "availability_zone" {
+  type = string
+  default = ""
+}
